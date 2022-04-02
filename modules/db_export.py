@@ -8,10 +8,13 @@ from fpdf import FPDF
 def create_result_directories():
     if not os.path.exists("results"):
         os.mkdir("results")
+        print('/result directory has been successfully created')
     if not os.path.exists("results/Excel"):
         os.mkdir("results/Excel")
+        print('/results/Excel directory has been successfully created')
     if not os.path.exists("results/PDF"):
         os.mkdir("results/PDF")
+        print('/results/PDF directory has been successfully created')
 
 
 def get_all_users_from_db(sql):
